@@ -60,15 +60,6 @@ education:
     summary: |
       GPA: 88.4/100
 
-publications:
-  **Guo, Z.**, Wang, K., Li, W., Qian, Y., Arandjelović, O., Fang, L. (2024). [Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack](https://doi.org/10.48550/arXiv.2401.09673). _arXiv preprint arXiv:2401.09673_.
-  Qian, Y., Hong, X., Arandjelovi\'c, O., **Guo, Z.**, Donovan, C. R. (2023). [Semi-Supervised Crowd Counting with Masked Modeling: Facilitating Holistic Understanding of Crowd Scenes](https://doi.org/10.48550/arXiv.2310.10352). _arXiv preprint arXiv:2310.10352_.
-  **Guo, Z.**, Qian, Y., Arandjelovi\'c, O., Fang, L. (2024). [A White-Box False Positive Adversarial Attack Method on Contrastive Loss-Based Offline Handwritten Signature Verification Models](https://doi.org/10.48550/arXiv.2308.08925). _In 27th International Conference on Artificial Intelligence and Statistics (AISTATS)_.
-  **Guo, Z.**, Arandjelovi\'c, O., Reid, D., Lei, Y. (2023). (https://doi.org/10.3390/jimaging9060107)[A Siamese Transformer Network for Zero-Shot Ancient Coin Classification]. _Journal of Imaging_, 9(6), 107.
-  Hu, H., **Guo, Z.** (2021, October). [A U-net and KMeans based method for brain tumor segmentation and measurement](http://dx.doi.org/10.1117/12.2604691). _In Proc. of SPIE_ Vol (Vol. 11911, pp. 119111V-1).
-  **Guo, Z.** (2020, July). [The development and comparison of face recognition algorithms based on different technical characteristics](http://dx.doi.org/10.1109/CVIDL51233.2020.00009). _In 2020 International Conference on Computer Vision, Image and Deep Learning (CVIDL)_ (pp. 6-10). IEEE.
-  _Guo, Z._, Jia, D., Wang, Z., Zhou, Y. (2020). [A Method of Video Recognition Network of Face Tampering Based on Deep Learning](https://patentscope.wipo.int/search/en/detail.jsf?docId=AU281708559). Patent No. AU2019101186A4.
-
 work:
   - position: Research Assistant
     company_name: University of St Andrews
