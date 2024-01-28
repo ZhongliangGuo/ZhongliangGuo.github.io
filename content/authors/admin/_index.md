@@ -28,7 +28,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'zg34@st-andrews.ac.uk'
+    url: mailto:zg34@st-andrews.ac.uk
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/ZhongliangGuo
