@@ -113,7 +113,7 @@ skills:
       - name: Soccer
         description: ''
         percent: 80
-        icon: person-simple-walkz
+        icon: person-simple-walk
 
 languages:
   - name: Mandarin
