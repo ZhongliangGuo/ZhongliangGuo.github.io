@@ -10,7 +10,7 @@ baseURL: 'https://ZhongliangGuo.github.io/' # Website URL
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en-us
+defaultContentLanguage: en
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
