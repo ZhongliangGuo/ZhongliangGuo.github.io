@@ -45,7 +45,7 @@ education:
     date_start: 2022-10-27
     date_end: 2026-10-27
     summary: |
-      Research interests on _Artificial Intelligence_, _Machine Learning_, _Computer Vision_, and _Adversarial Attack_. Supervised by [Dr Ognjen Arandjelović](https://scholar.google.com/citations?user=D7bpRJ8AAAAJ).
+      Research interests on _Artificial Intelligence_, _Machine Learning_, _Computer Vision_, and _Adversarial Attack_. Supervised by [Dr Ognjen Arandjelović](https://scholar.google.com/citations?user=D7bpRJ8AAAAJ) and [Dr Lei Fang](https://sites.google.com/view/leifangresearch/home).
   - area: MSc Artificial Intelligence
     institution: University of St Andrews
     date_start: 2021-09-13
