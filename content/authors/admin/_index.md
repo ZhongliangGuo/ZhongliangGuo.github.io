@@ -3,7 +3,7 @@
 title: Dr. Zhongliang Guo
 
 # Name pronunciation (optional)
-name_pronunciation: &nbsp;&nbsp;John Leon Kwok
+name_pronunciation: "&nbsp;&nbsp;John Leon Kwok"
 
 # Full name (for SEO)
 first_name: Zhongliang
