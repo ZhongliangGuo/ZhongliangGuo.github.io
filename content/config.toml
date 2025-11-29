@@ -1,0 +1,63 @@
+[site]
+title = "Zhongliang's Homepage"
+description = "AI Security Researcher"
+favicon = "/favicon.png"
+last_updated = "November 29, 2025"
+
+[author]
+name = "Dr. Zhongliang Guo"
+title = "AI Security Researcher"
+institution = "University of St Andrews"
+avatar = "/avatar.png"
+
+[social]
+# Contact information (leave blank or delete to hide)
+
+email = "guo_zhongliang@hotmail.com"
+google_scholar = "https://scholar.google.com/citations?user=LCe4PLcAAAAJ"
+orcid = "https://orcid.org/0000-0002-6025-3021"
+github = "https://github.com/ZhongliangGuo"
+linkedin = "https://www.linkedin.com/in/zhongliang-guo-87432b1ab/"
+
+[features]
+# Show a like button on the about page
+enable_likes = false
+
+# Display all subpages on a single page
+enable_one_page_mode = false
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Teaching"
+type = "page"
+target = "teaching"
+href = "/teaching"
+
+[[navigation]]
+title = "Awards"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "Services"
+type = "page"
+target = "services"
+href = "/services"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"

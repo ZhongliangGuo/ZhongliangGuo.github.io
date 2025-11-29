@@ -1,0 +1,33 @@
+type = "card"
+title = "Awards"
+description = "Honors and awards I have received."
+
+[[items]]
+title = "CVPR 2025 Highlight Paper"
+subtitle = "IEEE/CVF Computer Vision and Pattern Recognition Conference"
+date = "2025"
+content = "Highlight Paper (235/2360 acceptance rate)."
+
+[[items]]
+title = "ECAI 2024 Conference Travel Grant"
+subtitle = "European Association for Artificial Intelligence (EurAI)"
+date = "2024"
+content = "Conference Travel Grant (22/547 recipients)."
+
+[[items]]
+title = "PhD Scholarships with Stipend"
+subtitle = "Full Funding (2022-2026)"
+date = "2022"
+content = "Awarded full PhD scholarships with stipend for four years."
+
+[[items]]
+title = "Dean's List"
+subtitle = "University of St Andrews"
+date = "2022"
+content = "Academic excellence recognition for 2021/2022 academic year."
+
+[[items]]
+title = "Outstanding Undergraduate Dissertation"
+subtitle = "NWUPL"
+date = "2021"
+content = "Recognition for exceptional undergraduate research and dissertation."

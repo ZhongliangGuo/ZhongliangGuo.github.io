@@ -1,0 +1,31 @@
+type = "card"
+title = "Teaching"
+description = "Courses I have taught or assisted with."
+
+[[items]]
+title = "CS1002 Object-Oriented Programming"
+subtitle = "Lab Demonstrator"
+date = "2023-09"
+content = """Served as a lab demonstrator for this foundational 20-credit module, conducting weekly 3-hour practical support sessions to help first-year students with Java programming, object-oriented design, and problem-solving strategies. Worked alongside Dr. Ruth Letham and Prof. Graham Kirby."""
+tags = ["Undergraduate", "Programming", "Java"]
+
+[[items]]
+title = "CS3105 Artificial Intelligence"
+subtitle = "Teaching Assistant (Marker)"
+date = "2024-09"
+content = """Worked as a marker for this advanced undergraduate module, evaluating coursework and programming assignments on AI algorithms including search methods, game theory, probabilistic reasoning, and machine learning. Provided detailed feedback to third-year students. Worked with Dr. Lei Fang, Dr. Alice Toniolo, and Dr. Nguyen Dang."""
+tags = ["Undergraduate", "AI", "Assessment"]
+
+[[items]]
+title = "ID5059 Machine Learning for Data Analysis"
+subtitle = "Lab Demonstrator"
+date = "2025-01"
+content = """Supported postgraduate students in implementing machine learning algorithms and working on real-world data analysis projects. Provided technical assistance with Python programming, model optimization, and project mentoring. Covered topics including neural networks, ensemble methods, and complex regression techniques. Worked with Dr. Peter Macgregor and Dr. Chrissy Fell."""
+tags = ["Postgraduate", "Machine Learning", "Data Science"]
+
+[[items]]
+title = "Adversarial Attack as a Defense"
+subtitle = "Seminar Speaker"
+date = "2024-11"
+content = """Delivered a research seminar exploring how adversarial attacks can be repurposed as defensive mechanisms in computer vision. Presented findings on Locally Adaptive Adversarial Color Attack (LAACA) for protecting artistic IP and Posterior Collapse Attack (PCA) for preventing unauthorized image manipulation in diffusion models."""
+tags = ["Research", "AI Security", "Adversarial ML"]

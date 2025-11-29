@@ -1,0 +1,21 @@
+type = "card"
+title = "Services"
+description = "Professional services and community involvement."
+
+[[items]]
+title = "Leading Guest Editor"
+subtitle = "Pattern Recognition - Trustworthy AI Special Issue"
+date = "2025-10"
+content = "Leading Guest Editor for the Special Issue on Security and Trustworthiness in Pattern Recognition: Attacks, Evaluations, and Defenses."
+
+[[items]]
+title = "Reviewer"
+subtitle = "Academic Journals and Conferences"
+date = "To Date"
+content = "Reviewer for Pattern Recognition, Information Sciences, IEEE Transactions on Information Forensics and Security (T-IFS), ICLR, CVPR, NeurIPS, and AAAI."
+
+[[items]]
+title = "Conference Volunteer"
+subtitle = "ECAI 2024"
+date = "2024-10"
+content = "Volunteer for the European Conference on Artificial Intelligence 2024."

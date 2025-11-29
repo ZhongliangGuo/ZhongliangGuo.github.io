@@ -1,0 +1,183 @@
+@article{a1j-2026-tifs-PCA,
+  selected={true},
+  title={A Grey-box Attack against Latent Diffusion Model-based Image Editing by Posterior Collapse},
+  author={Zhongliang Guo and Chun Tong Lei and Lei Fang and Shuai Zhao and Yifei Qian and Jingyu Lin and Zeyu Wang and Cunjian Chen and Ognjen Arandjelović and Chun Pong Lau},
+  journal={IEEE Transactions on Information Forensics and Security},
+  abbr={IEEE T-IFS},
+  year={2026},
+  url={https://arxiv.org/abs/2408.10901},
+  code={https://github.com/ZhongliangGuo/PosteriorCollapseAttack},
+  abstract={Recent advancements in Latent Diffusion Models (LDMs) have revolutionized image synthesis and manipulation, raising significant concerns about data misappropriation and intellectual property infringement. While adversarial attacks have been extensively explored as a protective measure against such misuse of generative AI, current approaches are severely limited by their heavy reliance on model-specific knowledge and substantial computational costs. Drawing inspiration from the posterior collapse phenomenon observed in VAE training, we propose the Posterior Collapse Attack (PCA), a novel framework for protecting images from unauthorized manipulation. Through comprehensive theoretical analysis and empirical validation, we identify two distinct collapse phenomena during VAE inference: diffusion collapse and concentration collapse. Based on this discovery, we design a unified loss function that can flexibly achieve both types of collapse through parameter adjustment, each corresponding to different protection objectives in preventing image manipulation. Our method significantly reduces dependence on model-specific knowledge by requiring access to only the VAE encoder, which constitutes less than 4\% of LDM parameters. Notably, PCA achieves prompt-invariant protection by operating on the VAE encoder before text conditioning occurs, eliminating the need for empty prompt optimization required by existing methods. This minimal requirement enables PCA to maintain adequate transferability across various VAE-based LDM architectures while effectively preventing unauthorized image editing. Extensive experiments show PCA outperforms existing techniques in protection effectiveness, computational efficiency (runtime and VRAM), and generalization across VAE-based LDM variants.},
+  description={A VAE-targeted adversarial protection framework that leverages posterior collapse phenomena to prevent unauthorized image manipulation in latent diffusion models with minimal computational overhead.}
+}
+
+@article{a1j-2026-pr,
+  selected={true},
+  title={Artwork Protection Against Unauthorized Neural Style Transfer and Aesthetic Color Distance Metric},
+  author={Zhongliang Guo and Yifei Qian and Shuai Zhao and Junhao Dong and Yanli Li and Ognjen Arandjelović and Fang Lei and Chun Pong Lau},
+  journal={Pattern Recognition},
+  year={2026},
+  url={https://doi.org/10.1016/j.patcog.2025.112105},
+  code={https://github.com/ZhongliangGuo/ACDM},
+  abstract={Neural style transfer (NST) generates new images by combining the style of one image with the content of another. However, unauthorized NST can exploit artwork, raising concerns about artists’ rights and motivating the development of proactive protection methods. We propose Locally Adaptive Adversarial Color Attack (LAACA), enabling artists to conveniently protect their work from unauthorized NST by pre-processing the artwork image before public release, providing content-independent protection regardless of which content image it may later be combined with. LAACA introduces adaptive perturbations that significantly degrade NST quality while maintaining the visual integrity of the original image. We also develope LAACAv2, which resists the current SOTA adversarial perturbation removal method — SDEdit-based adversarial purification. Additionally, we introduce the Aesthetic Color Distance Metric (ACDM) to better evaluate color-sensitive tasks like NST. Extensive experiments across various NST techniques demonstrate our methods outperform baselines in structural similarity, color preservation, and perceptual quality. User studies with both general users and art experts confirm the practical applicability of our approach, addressing the social trust crisis in the art community while advancing adversarial machine learning at the intersection of art, technology, and intellectual property rights.},
+  description={A proactive protection method using adaptive adversarial perturbations to prevent unauthorized neural style transfer of artwork while preserving visual quality and resisting purification-based defenses.}
+}
+
+@inproceedings{a1c-2024-ecai,
+  selected={true},
+  title={Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack},
+  author={Zhongliang Guo and Yifei Qian and Kaixuan Wang and Weiye Li and Ziheng Guo and Yuheng Wang and Yanli Li and Ognjen Arandjelović and Lei Fang},
+  booktitle={The 27th European Conference on Artificial Intelligence},
+  abbr={ECAI Oral},
+  year={2024},
+  url={https://doi.org/10.3233/FAIA240643},
+  abstract={Neural style transfer (NST) generates new images by combining the style of one image with the content of another. However, unauthorized NST can exploit artwork, raising concerns about artists' rights and motivating the development of proactive protection methods. We propose Locally Adaptive Adversarial Color Attack (LAACA), empowering artists to protect their artwork from unauthorized style transfer by processing before public release. By delving into the intricacies of human visual perception and the role of different frequency components, our method strategically introduces frequency-adaptive perturbations in the image. These perturbations significantly degrade the generation quality of NST while maintaining an acceptable level of visual change in the original image, ensuring that potential infringers are discouraged from using the protected artworks, because of its bad NST generation quality. Additionally, existing metrics often overlook the importance of color fidelity in evaluating color-mattered tasks, such as the quality of NST-generated images, which is crucial in the context of artistic works. To comprehensively assess the color-mattered tasks, we propose the Adversarial Color Distance Metric (ACDM), designed to quantify the color difference of images pre- and post-manipulations. Experimental results confirm that attacking NST using LAACA results in visually inferior style transfer, and the ACDM can efficiently measure color-mattered tasks. By providing artists with a tool to safeguard their intellectual property, our work relieves the socio-technical challenges posed by the misuse of NST in the art community.},
+  description={A proactive protection method using frequency-adaptive perturbations to prevent unauthorized neural style transfer while preserving visual quality of original artwork.},
+  code={https://github.com/ZhongliangGuo/LAACA}
+}
+
+@inproceedings{a1c-2024-aistats,
+  selected={true},
+  title={A White-Box False Positive Adversarial Attack Method on Contrastive Loss-Based Offline Handwritten Signature Verification Models},
+  author={Zhongliang Guo and Weiye Li and Yifei Qian and Ognjen Arandjelovic and Lei Fang},
+  booktitle={The 27th International Conference on Artificial Intelligence and Statistics},
+  abbr={AISTATS},
+  abstract={In this paper, we tackle the challenge of white-box false positive adversarial attacks on contrastive loss based offline handwritten signature verification models. We propose a novel attack method that treats the attack as a style transfer between closely related but distinct writing styles. To guide the generation of deceptive images, we introduce two new loss functions that enhance the attack success rate by perturbing the Euclidean distance between the embedding vectors of the original and synthesized samples, while ensuring minimal perturbations by reducing the difference between the generated image and the original image. Our method demonstrates state-of-the-art performance in white-box attacks on contrastive loss based offline handwritten signature verification models, as evidenced by our experiments. The key contributions of this paper include a novel false positive attack method, two new loss functions, effective style transfer in handwriting styles, and superior performance in white-box false positive attacks compared to other white-box attack methods.},
+  year={2024},
+  url={https://proceedings.mlr.press/v238/guo24a.html},
+  description={A novel white-box adversarial attack on signature verification models using style transfer with specialized loss functions to manipulate embedding distances while maintaining visual similarity.},
+  code={https://github.com/ZhongliangGuo/FP-attack}
+}
+
+@article{a1j-2023-coin,
+  title={A Siamese Transformer Network for Zero-Shot Ancient Coin Classification},
+  author={Zhongliang Guo and Ognjen Arandjelović and David Reid and Yaxiong Lei and Jochen Büttner},
+  journal={Journal of Imaging},
+  year={2023},
+  url={https://doi.org/10.3390/jimaging9060107},
+  description={A pairwise matching approach for ancient coin identification using Siamese Vision Transformers, enabling robust attribution without requiring exemplars for every coin issue class.},
+  abstract={Ancient numismatics, the study of ancient coins, has in recent years become an attractive domain for the application of computer vision and machine learning. Though rich in research problems, the predominant focus in this area to date has been on the task of attributing a coin from an image, that is of identifying its issue. This may be considered the cardinal problem in the field and it continues to challenge automatic methods. In the present paper, we address a number of limitations of previous work. Firstly, the existing methods approach the problem as a classification task. As such, they are unable to deal with classes with no or few exemplars (which would be most, given over 50,000 issues of Roman Imperial coins alone), and require retraining when exemplars of a new class become available. Hence, rather than seeking to learn a representation that distinguishes a particular class from all the others, herein we seek a representation that is overall best at distinguishing classes from one another, thus relinquishing the demand for exemplars of any specific class. This leads to our adoption of the paradigm of pairwise coin matching by issue, rather than the usual classification paradigm, and the specific solution we propose in the form of a Siamese neural network. Furthermore, while adopting deep learning, motivated by its successes in the field and its unchallenged superiority over classical computer vision approaches, we also seek to leverage the advantages that transformers have over the previously employed convolutional neural networks, and in particular their non-local attention mechanisms, which ought to be particularly useful in ancient coin analysis by associating semantically but not visually related distal elements of a coin’s design. Evaluated on a large data corpus of 14,820 images and 7605 issues, using transfer learning and only a small training set of 542 images of 24 issues, our Double Siamese ViT model is shown to surpass the state of the art by a large margin, achieving an overall accuracy of 81%. Moreover, our further investigation of the results shows that the majority of the method’s errors are unrelated to the intrinsic aspects of the algorithm itself, but are rather a consequence of unclean data, which is a problem that can be easily addressed in practice by simple pre-processing and quality checking.}
+}
+
+@patent{a1p-2019-deefake,
+  author = {Guo, Zhongliang and Jia, Dian and Wang, Zhaokai and Wu, Jiahang and Zhou, Yongqi},
+  title = {A Method of Video Recognition Network of Face Tampering Based on Deep Learning},
+  number = {AU2019101186},
+  year = {2019},
+  month = {October},
+  nationality = {Australia},
+  description={A convolutional neural network architecture with Inception modules for deepfake video detection, achieving 94.5% accuracy on FaceForensics++ through optimized hyperparameters and training strategies.},
+  note = {Application Number: 2019101186, Publication Date: 16.01.2020}
+}
+
+@inproceedings{a2c-2025-cvpr,
+  selected={true},
+  title={T2ICount: Enhancing Cross-modal Understanding for Zero-Shot Counting},
+  author={Yifei Qian# and Zhongliang Guo# and Bowen Deng and Chun Tong Lei and Shuai Zhao and Chung Pong Lau and Xiaopeng Hong and Michael P Pound},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  abbr={CVPR Highlight},
+  year={2025},
+  url={https://openaccess.thecvf.com/content/CVPR2025/html/Qian_T2ICount_Enhancing_Cross-modal_Understanding_for_Zero-Shot_Counting_CVPR_2025_paper.html},
+  code={https://github.com/cha15yq/T2ICount},
+  abstract={Zero-shot object counting aims to count instances of arbitrary object categories specified by text descriptions. Existing methods typically rely on vision-language models like CLIP, but often exhibit limited sensitivity to text prompts. We present T2ICount, a diffusion-based framework that leverages rich prior knowledge and fine-grained visual understanding from pretrained diffusion models. While one-step denoising ensures efficiency, it leads to weakened text sensitivity. To address this challenge, we propose a Hierarchical Semantic Correction Module that progressively refines text-image feature alignment, and a Representational Regional Coherence Loss that provides reliable supervision signals by leveraging the cross-attention maps extracted from the denoising U-Net. Furthermore, we observe that current benchmarks mainly focus on majority objects in images, potentially masking models' text sensitivity. To address this, we contribute a challenging re-annotated subset of FSC147 for better evaluation of text-guided counting ability. Extensive experiments demonstrate that our method achieves superior performance across different benchmarks.},
+  description={A diffusion-based zero-shot object counting framework that enhances text sensitivity through hierarchical semantic correction and cross-attention supervision for fine-grained counting.}
+}
+
+@article{a2j-2025-tnnls,
+  title={Threats and Defenses in the Federated Learning Life Cycle: A Comprehensive Survey and Challenges},
+  author={Yanli Li and Zhongliang Guo and Nan Yang and Huaming Chen and Dong Yuan and Weiping Ding},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  abbr={IEEE TNNLS},
+  year={2025},
+  url={https://doi.org/10.1109/TNNLS.2025.3563537},
+  abstract={Federated learning (FL) offers innovative solutions for privacy-preserving distributed machine learning (ML). Different from centralized data collection algorithms, FL enables participants to locally train their model and only share the model updates for aggregation. Since private data never leaves the end node, FL effectively mitigates privacy leakage during collaborative training. Despite its promising potential, FL is vulnerable to various attacks due to its distributed nature, affecting the entire life cycle of FL services. These threats can harm the model’s utility or compromise participants’ privacy, either directly or indirectly. In response, numerous defense frameworks have been proposed, demonstrating effectiveness in specific settings and scenarios. To provide a clear understanding of the current research landscape, this article reviews the most representative and state-of-the-art threats and defense frameworks throughout the FL service life cycle. We start by identifying FL threats that harm utility and privacy, including those with potential or direct impacts. Then, we dive into the defense frameworks, analyze the relationship between threats and defenses, and compare the trade-offs among different defense strategies. We subsequently revisit these studies to evaluate their practicality in real-world scenarios and conclude by summarizing existing research bottlenecks and outlining future directions. We hope this survey sheds light on trustworthy FL research and contributes to the FL community.},
+  description={A comprehensive survey of security threats and defense mechanisms throughout the federated learning lifecycle, analyzing utility-privacy trade-offs and identifying research gaps for trustworthy FL.}
+}
+
+@inproceedings{a3c-2025-cvpr,
+  title={Instant Adversarial Purification with Adversarial Consistency Distillation},
+  author={Chun Tong Lei and Hon Ming Yam and Zhongliang Guo and Yifei Qian and Chun Pong Lau},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  abbr={CVPR},
+  year={2025},
+  url={https://openaccess.thecvf.com/content/CVPR2025/html/Lei_Instant_Adversarial_Purification_with_Adversarial_Consistency_Distillation_CVPR_2025_paper.html},
+  code={https://github.com/antony090/InstantPure},
+  abstract={Neural networks have revolutionized numerous fields with their exceptional performance, yet they remain susceptible to adversarial attacks through subtle perturbations. While diffusion-based purification methods like DiffPure offer promising defense mechanisms, their computational overhead presents a significant practical limitation. In this paper, we introduce One Step Control Purification (OSCP), a novel defense framework that achieves robust adversarial purification in a single Neural Function Evaluation (NFE) within diffusion models. We propose Gaussian Adversarial Noise Distillation (GAND) as the distillation objective and Controlled Adversarial Purification (CAP) as the inference pipeline, which makes OSCP demonstrate remarkable efficiency while maintaining defense efficacy. Our proposed GAND addresses a fundamental tension between consistency distillation and adversarial perturbation, bridging the gap between natural and adversarial manifolds in the latent space, while remaining computationally efficient through Parameter-Efficient Fine-Tuning (PEFT) methods such as LoRA, eliminating the high computational budget request from full parameter fine-tuning. The CAP guides the purification process through the unlearnable edge detection operator calculated by the input image as an extra prompt, effectively preventing the purified images from deviating from their original appearance when using large purification steps. Our experimental results on ImageNet showcase OSCP's superior performance, achieving a 74.19% defense success rate with merely 0.1s per purification --- a 100-fold speedup compared to conventional approaches.},
+  description={A single-step adversarial purification framework using distillation and controlled inference in diffusion models, achieving 100-fold speedup while maintaining robust defense against adversarial attacks.}
+}
+
+@article{a3j-2025-tmlr,
+title={A Survey of Recent Backdoor Attacks and Defenses in Large Language Models},
+author={Shuai Zhao and Meihuizi Jia and Zhongliang Guo and Leilei Gan and Xiaoyu Xu and Xiaobao Wu and Jie Fu and Feng Yichao and Fengjun Pan and Anh Tuan Luu},
+journal={Transactions on Machine Learning Research},
+abbr={TMLR Survey Certification 🏆},
+issn={2835-8856},
+year={2025},
+url={https://openreview.net/forum?id=wZLWuFHxt5},
+abstract={Large Language Models (LLMs), which bridge the gap between human language understanding and complex problem-solving, achieve state-of-the-art performance on several NLP tasks, particularly in few-shot and zero-shot settings. Despite the demonstrable efficacy of LLMs, due to constraints on computational resources, users have to engage with open-source language models or outsource the entire training process to third-party platforms. However, research has demonstrated that language models are susceptible to potential security vulnerabilities, particularly in backdoor attacks. Backdoor attacks are designed to introduce targeted vulnerabilities into language models by poisoning training samples or model weights, allowing attackers to manipulate model responses through malicious triggers. While existing surveys on backdoor attacks provide a comprehensive overview, they lack an in-depth examination of backdoor attacks specifically targeting LLMs. To bridge this gap and grasp the latest trends in the field, this paper presents a novel perspective on backdoor attacks for LLMs by focusing on fine-tuning methods. Specifically, we systematically classify backdoor attacks into three categories: full-parameter fine-tuning, parameter-efficient fine-tuning, and no fine-tuning. Based on insights from a substantial review, we also discuss crucial issues for future research on backdoor attacks, such as further exploring attack algorithms that do not require fine-tuning, or developing more covert attack algorithms.},
+description={A comprehensive survey of backdoor attacks on large language models, systematically categorizing attacks by fine-tuning methodology and identifying future research directions in LLM security.}
+}
+
+@article{a3j-2025-diffprotect,
+  title={DiffProtect: Generative Adversarial Examples Using Diffusion Models for Facial Privacy Protection},
+  author={Jiang Liu and Chun Pong Lau and Zhongliang Guo and Yuxiang Guo and Zhaoyang Wang and Rama Chellappa},
+  journal = {Pattern Recognition},
+  year={2025},
+  url={https://doi.org/10.1016/j.patcog.2025.112780},
+  code={https://github.com/joellliu/DiffProtect},
+  abstract={The increasingly pervasive facial recognition (FR) systems raise serious concerns about personal privacy, especially for billions of users who have publicly shared their photos on social media. To address this challenge, several adversarial attack methods have been proposed to protect individuals from being identified by unauthorized FR systems with perturbed facial images. However, these approaches suffer from poor visual quality or low attack success rates, which limit their practical utility. Recently, diffusion models have achieved tremendous success in image generation. In this work, we ask: can diffusion models be used to generate adversarial examples against FR systems to improve both visual quality and attack performance? We propose DiffProtect, a novel method leveraging a diffusion autoencoder to generate semantically meaningful perturbations on FR systems. Extensive experiments demonstrate that DiffProtect produces more natural-looking encrypted images than state-of-the-art methods while achieving significantly higher attack success rates, e.g., 24.5% and 25.1% absolute improvements on the CelebA-HQ and FFHQ datasets. We further evaluate the effectiveness of DiffProtect in the real world using a commercial FR API and validate its usefulness in practice through a user study.},
+  description={A diffusion autoencoder-based method for generating semantically meaningful adversarial perturbations that protect facial images from unauthorized recognition systems with improved visual quality and attack success rates.}
+}
+
+@article{a3j-2024-tcsvt,
+  title={Semi-Supervised Crowd Counting with Masked Modeling: Facilitating Holistic Understanding of Crowd Scenes},
+  author={Yifei Qian and Xiaopeng Hong and Zhongliang Guo and Ognjen Arandjelović and {Carl R} Donovan},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  abbr={IEEE T-CSVT},
+  year={2024},
+  url={https://doi.org/10.1109/TCSVT.2024.3392500},
+  abstract={To alleviate the heavy annotation burden for training a reliable crowd counting model and thus make the model more practicable and accurate by being able to benefit from more data, this paper presents a new semi-supervised method based on the mean teacher framework. When there is a scarcity of labeled data available, the model is prone to overfit local patches. Within such contexts, the conventional approach of solely improving the accuracy of local patch predictions through unlabeled data proves inadequate. Consequently, we propose a more nuanced approach: fostering the model’s intrinsic ‘subitizing’ capability. This ability allows the model to accurately estimate the count in regions by leveraging its understanding of the crowd scenes, mirroring the human cognitive process. To achieve this goal, we apply masking on unlabeled data, guiding the model to make predictions for these masked patches based on the holistic cues. Furthermore, to help with feature learning, herein we incorporate a fine-grained density classification task. Our method is general and applicable to most existing crowd counting methods as it doesn’t have strict structural or loss constraints. In addition, we observe that the model trained with our framework shows strong contextual modeling capabilities, which allows it to make robust predictions even when some local details of patches are lost. Our method achieves the state-of-the-art performance, surpassing previous approaches by a large margin on challenging benchmarks such as ShanghaiTech A and UCF-QNRF.},
+  description={A semi-supervised crowd counting method that enhances model subitizing capability through masked prediction on unlabeled data, achieving robust performance with limited annotations.},
+  code={https://github.com/cha15yq/MRC-Crowd}
+}
+
+@article{a3j-2025-pr,
+  title={Perspective-assisted Prototype-based Learning for Semi-supervised Crowd Counting},
+  author={Yifei Qian and Liangfei Zhang and Zhongliang Guo and Xiaopeng Hong and Ognjen Arandjelović},
+  journal={Pattern Recognition},
+  url={https://doi.org/10.1016/j.patcog.2024.111073},
+  year={2025},
+  abstract={To alleviate the burden of labeling data to train crowd counting models, we propose a prototype-based learning approach for semi-supervised crowd counting with an embeded understanding of perspective. Our key idea is that image patches with the same density of people are likely to exhibit coherent appearance changes under similar perspective distortion, but differ significantly under varying distortions. Motivated by this observation, we construct multiple prototypes for each density level to capture variations in perspective. For labeled data, the prototype-based learning assists the regression task by regularizing the feature space and modeling the relationships within and across different density levels. For unlabeled data, the learnt perspective-embedded prototypes enhance differentiation between samples of the same density levels, allowing for a more nuanced assessment of the predictions. By incorporating regression results, we categorize unlabeled samples as reliable or unreliable, applying tailored consistency learning strategies to enhance model accuracy and generalization. Since the perspective information is often unavailable, we propose a novel pseudo-label assigner based on perspective self-organization which requires no additional annotations and assigns image regions to distinct spatial density groups, which mainly reflect the differences in average density among regions. Extensive experiments on four crowd counting benchmarks demonstrate the effectiveness of our approach.},
+  description={A prototype-based semi-supervised crowd counting method that captures perspective-aware density variations, enabling effective learning from limited labeled data through tailored consistency strategies.}
+}
+
+@article{a4j-2025-info-fusion,
+  title={Syntactic Paraphrase-based Synthetic Data Generation for Backdoor Attacks Against Chinese Language Models},
+  author={Man Hu and Yatao Yang and Deng Pan and Zhongliang Guo and Luwei Xiao and Deyu Lin and Shuai Zhao},
+  journal={Information Fusion},
+  year={2025},
+  url={https://doi.org/10.1016/j.inffus.2025.103376},
+  abstract={Language Models (LMs) have shown significant advancements in various Natural Language Processing (NLP) tasks. However, recent studies indicate that LMs are particularly susceptible to malicious backdoor attacks, where attackers manipulate the models to exhibit specific behaviors when they encounter particular triggers. While existing research has focused on backdoor attacks against English LMs, Chinese LMs remain largely unexplored. Moreover, existing backdoor attacks against Chinese LMs exhibit limited stealthiness. In this paper, we investigate the high detectability of current backdoor attacks against Chinese LMs and propose a more stealthy backdoor attack method based on syntactic paraphrasing. Specifically, we leverage large language models (LLMs) to construct a syntactic paraphrasing mechanism that transforms benign inputs into poisoned samples with predefined syntactic structures. Subsequently, we exploit the syntactic structures of these poisoned samples as triggers to create more stealthy and robust backdoor attacks across various attack strategies. Extensive experiments conducted on three major NLP tasks with various Chinese PLMs and LLMs demonstrate that our method can achieve comparable attack performance (almost 100% success rate). Additionally, the poisoned samples generated by our method show lower perplexity and fewer grammatical errors compared to traditional character-level backdoor attacks. Furthermore, our method exhibits strong resistance against two state-of-the-art backdoor defense mechanisms.},
+  description={A stealthy backdoor attack method for Chinese language models using LLM-generated syntactic paraphrasing as triggers, achieving high success rates while evading detection mechanisms.}
+}
+
+@article{a6j-2025-tac-ROP,
+    author={Shuai Zhao and Yulin Zhang and Luwei Xiao and Xinyi Wu and Yanhao Jia and Zhongliang Guo and Xiaobao Wu and Cong-Duy Nguyen and Guoming Zhang and Anh Tuan Luu},
+    title = {Affective-ROPTester: Capability and Bias Analysis of LLMs in Predicting Retinopathy of Prematurity},
+    journal={IEEE Transactions on Affective Computing},
+    abbr={IEEE T-AC},
+    year={2025},
+    url={https://arxiv.org/abs/2507.05816},
+    abstract={Despite the remarkable progress of large language models (LLMs) across various domains, their capacity to predict retinopathy of prematurity (ROP) risk remains largely unexplored. To address this gap, we introduce a novel Chinese benchmark dataset, termed CROP, comprising 993 admission records annotated with low, medium, and high-risk labels. To systematically examine the predictive capabilities and affective biases of LLMs in ROP risk stratification, we propose Affective-ROPTester, an automated evaluation framework incorporating three prompting strategies: Instruction-based, Chain-of-Thought (CoT), and In-Context Learning (ICL). The Instruction scheme assesses LLMs' intrinsic knowledge and associated biases, whereas the CoT and ICL schemes leverage external medical knowledge to enhance predictive accuracy. Crucially, we integrate emotional elements at the prompt level to investigate how different affective framings influence the model's ability to predict ROP and its bias patterns. Empirical results derived from the CROP dataset yield two principal observations. First, LLMs demonstrate limited efficacy in ROP risk prediction when operating solely on intrinsic knowledge, yet exhibit marked performance gains when augmented with structured external inputs. Second, affective biases are evident in the model outputs, with a consistent inclination toward overestimating medium- and high-risk cases. Third, compared to negative emotions, positive emotional framing contributes to mitigating predictive bias in model outputs. These findings highlight the critical role of affect-sensitive prompt engineering in enhancing diagnostic reliability and emphasize the utility of Affective-ROPTester as a framework for evaluating and mitigating affective bias in clinical language modeling systems.},
+    description={An automated evaluation framework investigating how emotional prompting affects large language models' performance and bias patterns in retinopathy of prematurity risk prediction using a novel Chinese benchmark.}
+}
+
+@article{a6j-2025-ins,
+    author = {Yuqi Li and Yanli Li and Kai Zhang and Fuyuan Zhang and Chuanguang Yang and Zhongliang Guo and Weiping Ding and Tingwen Huang},
+    title = {Achieving Fair Medical Image Segmentation in Foundation Models with Adversarial Visual Prompt Tuning},
+    journal = {Information Sciences},
+    url={https://doi.org/10.1016/j.ins.2025.122501},
+    year = {2025},
+    abstract={Recent advances in deep learning have significantly enhanced medical image analysis capabilities. Medical image segmentation, a critical application in this domain, enables precise delineation of anatomical structures and pathological regions, substantially supporting clinical decision-making. However, current segmentation methods primarily optimize for overall performance without considering disparities across demographic groups, raising important fairness concerns. To address this gap, we propose Adversarial Visual Prompt Tuning (AdvVPT), a parameter-efficient approach that enhances fairness in foundation models for medical image segmentation. AdvVPT introduces trainable visual prompts within the image encoder while keeping the backbone frozen, requiring only 0.812M additional parameters. These prompts are optimized through adversarial training to absorb demographic-specific biased information from image embeddings, achieved by maximizing prediction errors for sensitive attributes and increasing embedding distances between visual prompts and image features. Experimental evaluation on the Harvard-FairSeg dataset demonstrates that AdvVPT achieves state-of-the-art fairness performance across multiple demographic attributes. For racial fairness, AdvVPT achieves an ES-Dice score of 0.8996 and an ES-IoU score of 0.8222 on optic cup segmentation, substantially outperforming existing methods. For gender fairness using the SAT backbone, AdvVPT achieves an ES-Dice of 0.9297 and ES-IoU of 0.8614, demonstrating both superior performance and improved balance between male and female subgroups.},
+    description={A parameter-efficient adversarial visual prompt tuning method that mitigates demographic bias in foundation models for medical image segmentation while maintaining high performance.}
+}
