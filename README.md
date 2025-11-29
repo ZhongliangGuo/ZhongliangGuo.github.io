@@ -2,7 +2,7 @@
 This personal website is based on [PRISM](https://prism-demo.pages.dev/). I modified some parts for improving bibtex, and adding a feature for daily google scholar stats update.
 
 ## Usage
-`Use this template` -> `crete a new repository` -> '[Your user name].github.io'
+`Use this template` -> `crete a new repository` -> 'YourUserName.github.io'
 
 Change the `CNAME` to your own domain name and confirgure the DNS in the domain seller's dashboard.
 
