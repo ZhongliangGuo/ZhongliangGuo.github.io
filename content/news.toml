@@ -1,5 +1,9 @@
 [[news]]
 date = "2025-12"
+content = "I join the ByteDance/TikTok as an AI Security Research Scientist! 🎓"
+
+[[news]]
+date = "2025-12"
 content = "I officially get my PhD degree after the graduation ceremony! 🎓"
 
 [[news]]
@@ -48,4 +52,5 @@ content = "Two papers are accepted by CVPR 2025"
 
 [[news]]
 date = "2025-02"
+
 content = "One paper about LLM backdoor attack is accepted by Transactions on Machine Learning Research"
