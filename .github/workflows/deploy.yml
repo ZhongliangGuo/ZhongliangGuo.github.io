@@ -12,9 +12,18 @@ permissions:
   pages: write
   id-token: write
 
+# 添加并发控制，确保同时只有一个部署在进行
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,7 +43,6 @@ jobs:
       - name: Add .nojekyll
         run: touch out/.nojekyll
 
-      # 添加 CNAME 文件到输出目录
       - name: Add CNAME
         run: cp CNAME out/CNAME
 
