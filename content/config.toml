@@ -7,7 +7,7 @@ last_updated = "November 29, 2025"
 [author]
 name = "Dr. Zhongliang Guo"
 title = "AI Security Researcher"
-institution = "University of St Andrews"
+institution = "ByteDance/TikTok"
 avatar = "/avatar.png"
 
 [social]
@@ -61,3 +61,4 @@ title = "CV"
 type = "page"
 target = "cv"
 href = "/cv"
+
