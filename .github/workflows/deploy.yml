@@ -5,6 +5,7 @@ on:
     branches: [ main ]
     paths-ignore:
       - 'scholar-stats.json'
+      - 'README.md'
   workflow_dispatch:
 
 permissions:
