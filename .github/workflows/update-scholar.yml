@@ -1,0 +1,74 @@
+name: Update Google Scholar Stats
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Fetch Google Scholar Stats
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: |
+          curl -s "https://serpapi.com/search.json?engine=google_scholar_author&author_id=LCe4PLcAAAAJ&api_key=$SERPAPI_KEY" > scholar-data.json
+          
+          python3 << 'EOF'
+          import json
+          from datetime import datetime
+          
+          with open('scholar-data.json', 'r') as f:
+              data = json.load(f)
+          
+          stats = {
+              'citations': 0,
+              'h_index': 0,
+              'i10_index': 0,
+              'updated': datetime.utcnow().isoformat() + 'Z'
+          }
+          
+          if 'cited_by' in data and 'table' in data['cited_by']:
+              table = data['cited_by']['table']
+              
+              if len(table) > 0 and 'citations' in table[0]:
+                  citations_data = table[0]['citations']
+                  if isinstance(citations_data, dict) and 'all' in citations_data:
+                      stats['citations'] = int(citations_data['all'])
+              
+              if len(table) > 1 and 'h_index' in table[1]:
+                  h_index_data = table[1]['h_index']
+                  if isinstance(h_index_data, dict) and 'all' in h_index_data:
+                      stats['h_index'] = int(h_index_data['all'])
+              
+              if len(table) > 2 and 'i10_index' in table[2]:
+                  i10_index_data = table[2]['i10_index']
+                  if isinstance(i10_index_data, dict) and 'all' in i10_index_data:
+                      stats['i10_index'] = int(i10_index_data['all'])
+          
+          print(f"=== Final Stats ===")
+          print(f"Citations: {stats['citations']}")
+          print(f"h-index: {stats['h_index']}")
+          print(f"i10-index: {stats['i10_index']}")
+          
+          with open('scholar-stats.json', 'w') as f:
+              json.dump(stats, f, indent=2)
+          
+          print("Stats file created successfully!")
+          EOF
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add scholar-stats.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Google Scholar stats [$(date +'%Y-%m-%d')]" && git push)
