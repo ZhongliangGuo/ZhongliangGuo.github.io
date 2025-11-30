@@ -42,7 +42,7 @@ function ScholarStats() {
     });
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/ZhongliangGuo/ZhongliangGuo.github.io/master/scholar-stats.json?t=' + Date.now())
+        fetch('/scholar-stats.json?t=' + Date.now())
             .then(response => {
                 if (!response.ok) throw new Error('Network response was not ok');
                 return response.json();

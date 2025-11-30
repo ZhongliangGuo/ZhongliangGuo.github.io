@@ -60,7 +60,7 @@ jobs:
           print(f"h-index: {stats['h_index']}")
           print(f"i10-index: {stats['i10_index']}")
           
-          with open('scholar-stats.json', 'w') as f:
+          with open('public/scholar-stats.json', 'w') as f:
               json.dump(stats, f, indent=2)
           
           print("Stats file created successfully!")
@@ -70,5 +70,5 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add scholar-stats.json
+          git add public/scholar-stats.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update Google Scholar stats [$(date +'%Y-%m-%d')]" && git push)
