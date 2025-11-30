@@ -185,7 +185,7 @@ export default function Profile({ author, social, features, researchInterests }:
                     />
                 </div>
                 {/* My Kitty Arrow */}
-                <div className="absolute -left-24 top-1/2 transform -translate-y-1/2 flex items-center gap-2">
+                <div className="absolute -left-24 top-1/2 transform -translate-y-1/2 flex items-center gap-1.5">
                     <span className="text-sm font-medium text-accent whitespace-nowrap">My Kitty</span>
                     <svg className="w-16 h-6 text-accent" viewBox="0 0 64 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 12H60M60 12L52 4M60 12L52 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -427,4 +427,5 @@ export default function Profile({ author, social, features, researchInterests }:
         </motion.div>
     );
 }
+
 
