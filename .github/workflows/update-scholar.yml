@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}  # 👈 使用 PAT 而不是 GITHUB_TOKEN
       
       - name: Fetch Google Scholar Stats
         env:
