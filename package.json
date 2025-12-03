@@ -37,7 +37,7 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": "^22.0.0"
+    "node": ">=22.0.0"
   },
   "optionalDependencies": {
     "@tailwindcss/oxide-win32-x64-msvc": "^4.1.17"
