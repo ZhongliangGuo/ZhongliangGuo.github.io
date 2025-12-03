@@ -3,6 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { getConfig } from "@/lib/config";
+import { Analytics } from "@vercel/analytics/react";
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = getConfig();
@@ -106,8 +107,10 @@ export default function RootLayout({
           <main className="min-h-screen pt-16 lg:pt-20">
             {children}
           </main>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
   );
 }
+
