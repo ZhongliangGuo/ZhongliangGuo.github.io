@@ -6,7 +6,7 @@ last_updated = "November 29, 2025"
 
 [author]
 name = "Dr. Zhongliang Guo"
-title = "AI Security Researcher<br />Speedran a PhD in 2.5 years"
+title = "AI Security Researcher, Speedran a PhD in 2.5 years, Pattern Recognition leading guest editor"
 institution = "University of St Andrews"
 avatar = "/avatar.png"
 
@@ -61,6 +61,7 @@ title = "CV"
 type = "page"
 target = "cv"
 href = "/cv"
+
 
 
 
