@@ -13,7 +13,7 @@ avatar = "/avatar.png"
 [social]
 # Contact information (leave blank or delete to hide)
 
-email = "guo_zhongliang@hotmail.com"
+email = "zhongliang@robust-ai.me"
 google_scholar = "https://scholar.google.com/citations?user=LCe4PLcAAAAJ"
 orcid = "https://orcid.org/0000-0002-6025-3021"
 github = "https://github.com/ZhongliangGuo"
@@ -61,6 +61,7 @@ title = "CV"
 type = "page"
 target = "cv"
 href = "/cv"
+
 
 
 
