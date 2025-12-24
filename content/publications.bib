@@ -5,7 +5,7 @@
   journal={IEEE Transactions on Information Forensics and Security},
   abbr={IEEE T-IFS},
   year={2026},
-  url={https://arxiv.org/abs/2408.10901},
+  url={https://doi.org/10.1109/TIFS.2025.3639957},
   code={https://github.com/ZhongliangGuo/PosteriorCollapseAttack},
   abstract={Recent advancements in Latent Diffusion Models (LDMs) have revolutionized image synthesis and manipulation, raising significant concerns about data misappropriation and intellectual property infringement. While adversarial attacks have been extensively explored as a protective measure against such misuse of generative AI, current approaches are severely limited by their heavy reliance on model-specific knowledge and substantial computational costs. Drawing inspiration from the posterior collapse phenomenon observed in VAE training, we propose the Posterior Collapse Attack (PCA), a novel framework for protecting images from unauthorized manipulation. Through comprehensive theoretical analysis and empirical validation, we identify two distinct collapse phenomena during VAE inference: diffusion collapse and concentration collapse. Based on this discovery, we design a unified loss function that can flexibly achieve both types of collapse through parameter adjustment, each corresponding to different protection objectives in preventing image manipulation. Our method significantly reduces dependence on model-specific knowledge by requiring access to only the VAE encoder, which constitutes less than 4\% of LDM parameters. Notably, PCA achieves prompt-invariant protection by operating on the VAE encoder before text conditioning occurs, eliminating the need for empty prompt optimization required by existing methods. This minimal requirement enables PCA to maintain adequate transferability across various VAE-based LDM architectures while effectively preventing unauthorized image editing. Extensive experiments show PCA outperforms existing techniques in protection effectiveness, computational efficiency (runtime and VRAM), and generalization across VAE-based LDM variants.},
   description={A VAE-targeted adversarial protection framework that leverages posterior collapse phenomena to prevent unauthorized image manipulation in latent diffusion models with minimal computational overhead.}
@@ -208,5 +208,6 @@ description={A comprehensive survey of backdoor attacks on large language models
     pages={122501},
     publisher={Elsevier}
 }
+
 
 
